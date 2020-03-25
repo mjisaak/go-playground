@@ -1,5 +1,5 @@
-// https://tour.golang.org/moretypes/1
-
+// https://tour.golang.org/moretypes/13
+// Read about modules https://github.com/golang/go/wiki/Modules,
 package main
 
 import (
@@ -7,9 +7,14 @@ import (
 )
 
 func main() {
-	fmt.Println("Counting:")
 
-	for i := 0; i < 10; i++ {
-		defer fmt.Println("", i)
-	}
+	s := make([]int, 3)
+
+	fmt.Println(s)
+	ar := []int{1, 2, 3, 4, 5}
+	printSize(ar[:3])
+}
+
+func printSize(array []int) {
+	fmt.Printf("Capacitiy=%d; Length=%d", cap(array), len(array))
 }
