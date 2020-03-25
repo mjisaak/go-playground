@@ -1,4 +1,4 @@
-// https://tour.golang.org/moretypes/13
+// https://tour.golang.org/moretypes/15
 // Read about modules https://github.com/golang/go/wiki/Modules,
 package main
 
