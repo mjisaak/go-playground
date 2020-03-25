@@ -6,6 +6,11 @@ import (
 	"fmt"
 )
 
+type Player struct {
+	Name string
+	Age  int
+}
+
 func main() {
 
 	s := make([]int, 3)
