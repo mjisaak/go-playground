@@ -6,16 +6,16 @@ import (
 	"fmt"
 )
 
-type Player struct {
-	fartingPower int
-	name         string
-}
-
 func main() {
 
-	players := []Player{
-		Player{fartingPower: 3, name: "Martin"},
-	}
+	var s []int
+	var y []int
 
-	fmt.Println("yo", players)
+	s = append(s, 3)
+	s = append(s, 5)
+
+	y = append(s, 1)
+
+	fmt.Println("s: ", s)
+	fmt.Println("y: ", y)
 }
