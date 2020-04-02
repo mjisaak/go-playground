@@ -1,4 +1,4 @@
-// https://tour.golang.org/moretypes/16
+// https://tour.golang.org/methods/4
 // Read about modules https://github.com/golang/go/wiki/Modules,
 package main
 
@@ -6,16 +6,20 @@ import (
 	"fmt"
 )
 
+type Player struct {
+	Name string
+	Age  int
+}
+
 func main() {
 
-	var s []int
-	var y []int
+	// var m map[string]Player
+	m := make(map[string]Player)
 
-	s = append(s, 3)
-	s = append(s, 5)
+	m["Martin"] = Player{"Martin JI Brandl", 34}
+	_, ok := m["Martin2"]
 
-	y = append(s, 1)
+	fmt.Println("present:", ok)
+	fmt.Println(m["Martin"])
 
-	fmt.Println("s: ", s)
-	fmt.Println("y: ", y)
 }
